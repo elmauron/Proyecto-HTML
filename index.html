@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <title> - Electro Tecno - </title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <!-- LOGO PAGINA -->
+        <div id="logo">
+            <img src="image/logo.png" alt="Logo de la pagina">
+            <h1>Electro Tecno</h1>
+        </div>
+
+        <!-- CAJA DE BUSQUEDA -->
+        <div id="cont_search">
+            <form action="servidor.html" method="post" target="_blank"></form>
+            <input type="search" name="search" id="search_box" placeholder="Que estas buscando?">
+            <input type="submit" name="buscar" id="buscar_box" value="Buscar">
+        </div>
+        <!-- MENU DE NAVEGACION -->
+        <nav>
+            <ul>
+                <li><a href="monitor.com" target="_self"><b>ARMA TU PC</b></a></li>
+                <li><a href="mouse.com" target="_self"><b>QUIENES SOMOS?</b></a></li>
+                <li><a href="monitor.com" target="_self"><b>MONITORES</b></a></li>
+                <li><a href="mouse.com" target="_self"><b>MOUSE</b></a></li>
+                <li><a href="teclados.com" target="_self"><b>TECLADOS</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CUERPO PRINCIPAL -->
+
+    <main>
+
+        <!--
+      mauro:
+     - cambié el div:cont_cuerpo a un main, funciona igual
+     - re-hice la tabla pero ahora con thead, tbody y td.
+ también arreglé los borders para que se vean en sus respectivas celdas 
+ -->
+
+        <table>
+
+            <caption>
+                <h1> - NUESTROS PRODUCTOS - </h1>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th> <img class="img_product" src="image/monitor1.jpeg" alt="Imágen Monitor-1"> </th>
+                    <th> <img class="img_product" src="image/monitor3.jpeg" alt="Imágen Monitor-3"> </th>
+                    <th> <img class="img_product" src="image/monitor2.jpeg" alt="Imágen Monitor-2"> </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+
+                        <h1> Precio: $80000 </h1>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
+
+                    </td>
+                    <td>
+
+                        <h1> Precio: $80000 </h1>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
+
+                    </td>
+                    <td>
+
+                        <h1> Precio: $80000 </h1>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <h4> Descripción: </h4>
+                        <ul>
+                            <li> Relación Aspecto: </li>
+                            <li> Tasa de refresco: </li>
+                            <li> Tiempo de respuesta: </li>
+                            <li> Brillo: </li>
+                        </ul>
+
+                    </td>
+                    <td>
+
+                        <h4> Descripción: </h4>
+                        <ul>
+                            <li> Relación Aspecto: </li>
+                            <li> Tasa de refresco: </li>
+                            <li> Tiempo de respuesta: </li>
+                            <li> Brillo: </li>
+                        </ul>
+
+                    </td>
+                    <td>
+
+                        <h4> Descripción: </h4>
+                        <ul>
+                            <li> Relación Aspecto: </li>
+                            <li> Tasa de refresco: </li>
+                            <li> Tiempo de respuesta: </li>
+                            <li> Brillo: </li>
+                        </ul>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+<style>
+    /* ESTILOS BODY */
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    /* ESTILOS HEADER */
+    header {
+        background-color: rgb(133, 133, 133)
+    }
+
+    #logo {
+        margin-left: 0px;
+        height: 150px;
+        width: 150px;
+        text-align: center;
+    }
+
+    #logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #logo h1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        margin-top: 1px;
+    }
+
+    #cont_search {
+        background-color: white;
+        margin-left: 35%;
+        margin-top: -85px;
+        width: 450px;
+    }
+
+    #search_box {
+        border-color: white;
+        height: 35px;
+        width: 320px;
+
+    }
+
+    #buscar_box {
+        height: 35px;
+        width: 126px;
+    }
+
+    nav {
+        margin-top: 90px;
+        height: 50px;
+        background-color: #17181C;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        padding: 18px;
+    }
+
+    nav ul li {
+        float: left;
+        margin-top: -22px;
+    }
+
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    nav ul li a:hover {
+        background-color: #929fb3;
+    }
+
+    /* ESTILOS CUERPO PRINCIPAL (main) */
+
+    main {
+
+        height: 100%;
+        width: 100%;
+        background-color: lemonchiffon;
+        margin-top: 1em;
+
+    }
+
+    .img_product {
+
+        background-color: white;
+        width: 40%;
+
+    }
+
+    caption {
+
+        border-style: solid;
+        height: 100%;
+        background-color: hsl(54, 82%, 66%);
+    }
+
+    th {
+
+        border: solid black;
+        background-color: white;
+
+    }
+
+    td {
+
+        border: 3px solid black;
+
+    }
+</style>
+
+</html>
