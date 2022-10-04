@@ -15,47 +15,32 @@
     <header>
 
         <!-- LOGO PAGINA -->
-
         <div id="logo">
-
             <img src="image/logo.png" alt="Logo de la pagina">
-            <h1> Electro Tecno </h1>
-
+            <h1>Electro Tecno</h1>
         </div>
 
         <!-- CAJA DE BUSQUEDA -->
-
         <div id="cont_search">
-
-            <form action="servidor.html" method="post" target="_blank">
-
-                <input type="text" name="search" id="search_box" placeholder="   Que estas buscando? ">
-                <button> Buscar </button>
-
-            </form>
-
+            <form action="servidor.html" method="post" target="_blank"></form>
+            <input type="search" name="search" id="search_box" placeholder="Que estas buscando?">
+            <input type="submit" name="buscar" id="buscar_box" value="Buscar">
         </div>
 
         <!-- CARRITO -->
-
-
-
-        <a id="carrito" href="formulario-pago.html"><img src="image/carrito.png" alt="Carrito"></a>
-
+        <div id="carrito">
+            <a href="formulario-pago.html"><img src="image/carrito.png" alt="Carrito"></a>
+        </div>
 
         <!-- MENU DE NAVEGACION -->
         <nav>
-
             <ul>
-
-                <li> <a href="monitor.com" target="_self"> ARMA TU PC </a> </li>
-                <li> <a href="mouse.com" target="_self"> QUIENES SOMOS? </a> </li>
-                <li> <a href="monitor.com" target="_self"> MONITORES </a> </li>
-                <li> <a href="mouse.com" target="_self"> MOUSE </a> </li>
-                <li> <a href="teclados.com" target="_self"> TECLADOS </a> </li>
-
+                <li><a href="monitor.com" target="_self"><b>ARMA TU PC</b></a></li>
+                <li><a href="mouse.com" target="_self"><b>QUIENES SOMOS?</b></a></li>
+                <li><a href="monitor.com" target="_self"><b>MONITORES</b></a></li>
+                <li><a href="mouse.com" target="_self"><b>MOUSE</b></a></li>
+                <li><a href="teclados.com" target="_self"><b>TECLADOS</b></a></li>
             </ul>
-
         </nav>
 
     </header>
@@ -85,19 +70,19 @@
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interés </h3>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
 
                     </td>
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interés </h3>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
 
                     </td>
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interés </h3>
+                        <h3> Hasta 12 cuotas sin interéós </h3>
 
                     </td>
 
@@ -161,118 +146,126 @@
 
     }
 
-    /* ======== ESTILOS HEADER ======== */
-
+    /* ESTILOS HEADER */
     header {
 
         background-color: hsl(54, 82%, 66%);
-        height: 20em;
-        border: solid black;
     }
-
-    /* LOGO */
 
     #logo {
 
-        height: 14em;
-        width: 14em;
-        display: inline-block;
+        margin-left: 0px;
+        height: 150px;
+        width: 150px;
+        text-align: center;
 
     }
 
     #logo img {
 
-        height: 70%;
-        width: 70%;
-
-
+        height: 100%;
+        width: 100%;
 
     }
 
     #logo h1 {
 
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 30px;
-        margin-left: 11%;
+        font-size: 20px;
+        margin-top: 1px;
 
     }
-
-    /*  BÚSQUEDA */
 
     #cont_search {
 
-        width: 17em;
-        display: inline-block;
-        background-color: black;
-        margin-left: 25%;
+        border-style: solid;
+        background-color: white;
+        margin: auto;
+        margin-top: -90px;
+        width: 450px;
 
     }
 
-    #cont_search form {
+    #search_box {
 
-        border: black;
+        border-color: white;
+        height: 35px;
+        width: 320px;
 
     }
 
-    /*  CARRITO  */
+    #buscar_box {
 
-    #carrito,
-    #carrito img {
-
-        display: inline-block;
-        margin-left: 15em;
-        margin-bottom: 3em;
-        height: 6em;
-        width: 6em;
-        border: solid black;
+        height: 35px;
+        width: 126px;
 
     }
 
     nav {
 
+        margin-top: 90px;
         height: 50px;
         background-color: #17181C;
-        border: #0429bb solid;
+        text-align: center;
 
     }
 
+    nav ul {
 
-    nav li {
+        list-style: none;
+        display: inline-block;
+        padding: 18px;
 
-        height: 50px;
+    }
+
+    nav ul li {
+
         float: left;
-        margin-left: 2em;
-        border: solid black;
-        position: inherit;
+        margin-top: -22px;
 
     }
 
-    nav a {
+    nav ul li a {
 
         color: rgb(255, 255, 255);
-        text-align: center;
         text-decoration: none;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 20px;
-        margin-left: 3.5em;
-        margin-right: 3.5em;
+        padding: 18px;
 
     }
 
-    nav li:hover {
+    nav ul li a:hover {
 
         background-color: hsl(54, 82%, 66%);
 
     }
 
-    /* ESTILOS CUERPO PRINCIPAL (main) */
+    #carrito {
 
+        float: right;
+        margin-right: 30px;
+        margin-top: -50px;
+        height: 70px;
+        width: 70px;
+
+    }
+
+    #carrito img {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+
+    /* ESTILOS CUERPO PRINCIPAL (main) */
     main {
 
         height: 100%;
         width: 100%;
         background-color: lemonchiffon;
-        display: block;
 
 
     }
