@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body style="background-color: hsl(54, 82%, 66%) ; text-align: center;">
+
+    <div id=" contenedor">
+
+        <header>
+        </header>
+
+        <main>
+
+            <h1> - Pagar Carrito - </h1>
+
+            <form action="servidor.html" method="post" target="_blank">
+
+                <ul>
+                    <li style="margin-bottom: 1em;">
+                        <label for="inNombreDeUsuario"> Nombre de usuario: </label>
+                        <input type="text" name="nombre_usuario" id="inNombreDeUsuario" placeholder=" Ej: usuario_007"
+                            required>
+                    </li>
+
+                    <li>
+                        <label for="inPassword"> Contraseña: </label>
+                        <input type="password" id="inPassword" placeholder=" password " name="password_usuario"
+                            required>
+                    </li>
+
+                    <li>
+                        <p> Opciones de Pago: </p>
+
+                        <label for="opcion3"> Efectivo </label>
+                        <input type="radio" name="opcion_de_pago" value="3" id="opcion3">
+
+                        <label for="opcion6"> Crédito </label>
+                        <input type="radio" name="opcion_de_pago" value="6" id="opcion6">
+
+                        <label for="opcion12"> Débito </label>
+                        <input type="radio" name="opcion_de_pago" value="12" id="opcion12">
+                    </li>
+
+                    <li>
+                        <label for="opcion12"> Con Cupón de Descuento </label>
+                        <input type="checkbox" name="opcion_de_pago" value="12" id="opcion12">
+                    </li>
+
+                    <li style="margin-left: 40em; margin-top: 1em; margin-bottom: 1em;">
+                        <table>
+                            <caption> - Resumen de tu Pedido - </caption>
+
+                            <thead>
+                                <tr>
+                                    <th> Productos </th>
+                                    <th> $8000 </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Envío </td>
+                                    <td> $109 </td>
+                                </tr>
+                                <tr>
+                                    <td> Propina </td>
+                                    <td> $60 </td>
+                                </tr>
+                                <tr>
+                                    <th> TOTAL A PAGAR </th>
+                                    <td> $8169 </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </li>
+
+                    <li>
+                        <button type="submit"> Enviar </button>
+                        <button type="reset"> Restablecer </button>
+                        <button type="button"> Buscar </button>
+                    </li>
+
+                </ul>
+
+            </form>
+
+        </main>
+
+        <footer>
+        </footer>
+
+    </div>
+</body>
+
+</html>
