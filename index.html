@@ -27,6 +27,11 @@
             <input type="submit" name="buscar" id="buscar_box" value="Buscar">
         </div>
 
+        <!-- CARRITO -->
+        <div id="carrito">
+            <a href="formulario-pago.html"><img src="image/carrito.png" alt="Carrito"></a>
+        </div>
+        
         <!-- MENU DE NAVEGACION -->
         <nav>
             <ul>
@@ -133,17 +138,19 @@
 </body>
 
 <style>
+    
     /* ESTILOS BODY */
     body {
 
         background-color: white;
         margin: 0px;
+    
     }
 
     /* ESTILOS HEADER */
     header {
 
-        background-color: rgb(133, 133, 133)
+        background-color: hsl(54, 82%, 66%);
     }
 
     #logo {
@@ -172,9 +179,10 @@
 
     #cont_search {
 
+        border-style: solid;
         background-color: white;
-        margin-left: 35%;
-        margin-top: -85px;
+        margin: auto;
+        margin-top: -90px;
         width: 450px;
 
     }
@@ -230,18 +238,36 @@
 
     nav ul li a:hover {
 
-        background-color: #929fb3;
+        background-color: hsl(54, 82%, 66%);
 
     }
 
-    /* ESTILOS CUERPO PRINCIPAL (main) */
+    #carrito {
 
+        float: right;
+        margin-right: 30px;
+        margin-top: -50px;
+        height: 70px;
+        width: 70px;
+    
+    }
+
+    #carrito img {
+
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    
+
+/* ESTILOS CUERPO PRINCIPAL (main) */
     main {
 
         height: 100%;
         width: 100%;
         background-color: lemonchiffon;
-        margin-top: 1em;
+        
 
     }
 
