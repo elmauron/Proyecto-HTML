@@ -22,9 +22,12 @@
 
         <!-- CAJA DE BUSQUEDA -->
         <div id="cont_search">
-            <form action="servidor.html" method="post" target="_blank"></form>
-            <input type="search" name="search" id="search_box" placeholder="Que estas buscando?">
-            <input type="submit" name="buscar" id="buscar_box" value="Buscar">
+            <form action="servidor.html" method="post" target="_blank">
+
+                <input type="text" name="search" id="search_box" placeholder="   Que estas buscando? ">
+                <button> Buscar </button>
+
+            </form>
         </div>
 
         <!-- CARRITO -->
@@ -35,11 +38,11 @@
         <!-- MENU DE NAVEGACION -->
         <nav>
             <ul>
-                <li><a href="monitor.com" target="_self"><b>ARMA TU PC</b></a></li>
-                <li><a href="mouse.com" target="_self"><b>QUIENES SOMOS?</b></a></li>
-                <li><a href="monitor.com" target="_self"><b>MONITORES</b></a></li>
-                <li><a href="mouse.com" target="_self"><b>MOUSE</b></a></li>
-                <li><a href="teclados.com" target="_self"><b>TECLADOS</b></a></li>
+                <li><a href="monitor.com" target="_self"><b> ARMA TU PC </b></a></li>
+                <li><a href="mouse.com" target="_self"><b> QUIENES SOMOS? </b></a></li>
+                <li><a href="monitor.com" target="_self"><b> MONITORES </b></a></li>
+                <li><a href="mouse.com" target="_self"><b> MOUSE </b></a></li>
+                <li><a href="teclados.com" target="_self"><b> TECLADOS </b></a></li>
             </ul>
         </nav>
 
@@ -70,19 +73,19 @@
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interéós </h3>
+                        <h3> Hasta 12 cuotas sin interés </h3>
 
                     </td>
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interéós </h3>
+                        <h3> Hasta 12 cuotas sin interés </h3>
 
                     </td>
                     <td>
 
                         <h1> Precio: $80000 </h1>
-                        <h3> Hasta 12 cuotas sin interéós </h3>
+                        <h3> Hasta 12 cuotas sin interés </h3>
 
                     </td>
 
@@ -133,6 +136,18 @@
 
     <footer>
 
+        <div class="contact">
+
+            <h3>Contact: </h3>
+            <p> - Maximo Ozonas <br>
+                - Mauro Sagasti <br>
+                &#169; 2022 - Desarrollado por Laboratorio II </p>
+
+        </div>
+        <div class="arribaboton">
+            <a class="Irarriba" href="#logo"> Volver Arriba </a>
+        </div>
+
     </footer>
 
 </body>
@@ -182,7 +197,14 @@
         background-color: white;
         margin: auto;
         margin-top: -90px;
-        width: 450px;
+        width: 458px;
+
+    }
+
+    #cont_search button {
+
+        height: 35px;
+        width: 126px;
 
     }
 
@@ -190,14 +212,7 @@
 
         border-color: white;
         height: 35px;
-        width: 320px;
-
-    }
-
-    #buscar_box {
-
-        height: 35px;
-        width: 126px;
+        width: 300px;
 
     }
 
@@ -266,6 +281,7 @@
         height: 100%;
         width: 100%;
         background-color: lemonchiffon;
+        margin-bottom: 1em;
 
 
     }
@@ -294,6 +310,36 @@
     td {
 
         border: 3px solid black;
+
+    }
+
+    .Irarriba {
+
+        border: #17181C solid;
+        background-color: blanchedalmond;
+        width: 8em;
+        display: inline-block;
+
+    }
+
+    .contact,
+    .contact h3 {
+
+        color: aliceblue;
+        margin: 0;
+        margin-left: 1em;
+
+    }
+
+    .arribaboton {
+
+        text-align: center;
+
+    }
+
+    footer {
+
+        background-color: #17181C;
 
     }
 </style>
